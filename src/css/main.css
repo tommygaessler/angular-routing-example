@@ -1,0 +1,9 @@
+/* add custom styles */
+
+img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}

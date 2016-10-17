@@ -1,0 +1,17 @@
+
+<h1>Photos</h1>
+
+<a href="/#/">Home</a>
+<a href="/#/posts">Posts</a>
+<a href="/#/photos">Photos</a>
+
+<select class="form-control" ng-model="photosCtrl.username" ng-change="photosCtrl.changeUsername(photosCtrl.username)">
+  <option value="skelley803">skelley803</option>
+  <option value="sguestsmith">sguestsmith</option>
+  <option value="evanbatky">evanbatky</option>
+  <option value="tommygaessler">tommygaessler</option>
+</select>
+
+<h1>{{photosCtrl.username}}</h1>
+
+<img ng-repeat="photo in photosCtrl.photosArray track by $index" ng-src="{{ photo }}" alt="" />
